@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*img {width: 100%}*/
+
+.contenedor {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    'cabeza cabeza cabeza' 
+    'primero segundo tercero';
+    grid-template-columns: auto 60% auto;
+    grid-template-rows: auto;
+}
+
+.cabeza {
+    grid-area: cabeza;
+    background-color: gainsboro;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.primero {
+    grid-area: primero;
+    background-color: gray;
+    text-align: justify;
+    padding: 2%;
+}
+
+.segundo {
+    grid-area: segundo;
+    background-color: gray;
+    text-align: justify;
+    padding: 2%;
+}
+
+.tercero {
+    grid-area: tercero;
+    background-color: gray;
+    text-align: justify;
+    padding: 2%;
+}
+
+.primero, .segundo, .tercero, p, h1, h2{
+    margin: 2%
+}
+
+.hacerflex {
+    display: flex; 
+    flex-flow: row wrap;
+}
+
+.hacerflex > div {
+    flex: 48%;
+    background-color: white;
+    margin: 1%;
+    padding: 2%;
+}
+
+
+.cajonfotos {
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.cajonfotos img {
+    flex: 33%;
+    width: 33%;
+    padding:1%;
+}
+
+
